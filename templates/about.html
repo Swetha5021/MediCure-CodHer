@@ -1,0 +1,199 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="{% static 'core/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/themify-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'core/vendors/fontawesome/css/all.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'core/owl-carousel/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/nimate-css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/esponsive.css' %}" rel="stylesheet">
+</head>
+<body>
+
+     <header class="header_area">
+        <div class="top_menu row m0">
+  
+        </div>  
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand logo_h" href="index.html"><img src="{% static 'core/img/logo.png' %}" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="{% url 'dr_list' %}">Doctors</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'reg' %}">Register</a></li>      
+
+                            <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <div
+          class="banner_content d-md-flex justify-content-between align-items-center"
+          >
+          <div class="mb-3 mb-md-0">
+            <br>
+              <h2>About Us</h2>
+              <p>Our team of healthcare professionals and data scientists has a proven track record of delivering accurate and reliable healthcare solutions.<br> You can trust us to provide you with the best care possible.Technology is the backbone of our platform.
+                 We utilize cutting-edge machine learning and data analysis techniques to develop our disease prediction model and drug recommendation system. This ensures that you receive the most accurate and up-to-date information. <br> Technology is the backbone of 
+                 our platform. We utilize cutting-edge machine learning and data analysis techniques to develop our disease prediction model and drug recommendation system. This ensures that you receive the most accurate and up-to-date information.</p>
+              <h2>Our Mission</h2>
+              <p>At Medcare-SIH, our mission is clear: to empower individuals with access to accurate health information and personalized care. We believe that everyone deserves a healthier and happier life, and we're here to help you achieve just that. We are committed
+                 to promoting not just the treatment of illnesses, but the overall wellness of our users. Our platform offers a holistic approach to healthcare, encompassing preventive measures, early detection, and tailored treatments.</p>
+              <h2>Who We Are</h2>
+              <p>Meet the heart and soul of Medcare-SIH. Our team is a diverse blend of healthcare experts, data scientists, and technology enthusiasts. We bring together years of experience and knowledge to create a healthcare experience like no other. Our data scientists
+                 are the architects of our technological advancements. They work tirelessly to refine our models, ensuring that they are accurate, reliable, and capable of delivering cutting-edge healthcare solutions. <br> Transparency and trust are fundamental to our approach.
+                  We are committed to providing clear, accurate, and unbiased information, ensuring that you have the knowledge you need to make informed decisions about your health.</p>
+          </div>
+          <div class="page_link">
+
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="about-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-6 offset-xl-7 col-xl-5">
+                <div class="about-content">
+                    <h4>Enhance Your HealthCare<br>
+                        experience<br>
+                        Your health is our priority!</h4>
+                    <h6>We envision a world where healthcare is seamless, data-driven, and patient-centric.</h6>
+                    <p>we're on a mission to revolutionize healthcare through the power of technology. Our goal is to provide accessible, accurate, and personalized healthcare solutions to every individual, enhancing their overall well-being and quality of life.</p>
+                    <p>Discover real-life success stories from patients who have benefited from Medcare-SIH. These stories highlight the transformative impact our platform has had on people's lives, from early disease detection to more effective treatments.</p>
+                    
+                    <!-- <h6>Our Mission</h6>
+                    <p>At Medcare, our mission is clear: to empower individuals with access to accurate health information and personalized care. We believe that everyone deserves a healthier and happier life, and we're here to help you achieve just that.</p> -->
+                    <a class="link_one" href="/about">learn more</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <footer class="footer-area area-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Top Products</h4>
+                    <ul>
+                        <li><a href="#">Managed Website</a></li>
+                        <li><a href="#">Manage Reputation</a></li>
+                        <li><a href="#">Power Tools</a></li>
+                        <li><a href="#">Marketing Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-6 single-footer-widget">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Experts</a></li>
+                        <li><a href="#">Agencies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 single-footer-widget">
+                    <h4>Newsletter</h4>
+                    <p>You can trust us. we only send promo offers,</p>
+                    <div class="form-wrap" id="mc_embed_signup">
+                        <form target="_blank" action=""
+                        method="get" class="form-inline">
+                        <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
+                        required="" type="email" />
+                        <button class="click-btn btn btn-default">
+                            <i class="fa fa-envelope"></i>
+                        </button>
+                        <div style="position: absolute; left: -5000px;">
+                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
+                        </div>
+
+                        <div class="info"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-bottom d-flex justify-content-between">
+            <p class="col-lg-8 col-sm-12 footer-text m-0">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script><i class="" aria-hidden="true"></i> by <a href="https://www.swetha-sivasankararaj.com/" target="_blank">Swetha</a>
+            </p>
+            <div class="col-lg-4 col-sm-12 footer-social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-dribbble"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="{% static 'core/j/jquery-2.2.4.min.' %}"></script>
+<script src="{% static 'core/j/popper.' %}"></script>
+<script src="{% static 'core/j/bootstrap.min.' %}"></script>
+<script src="{% static 'core/j/stellar.' %}"></script>
+<script src="{% static 'vendors/owl-carousel/owl.carousel.min.' %}"></script>
+<script src="{% static 'core/j/jquery.ajaxchimp.min.' %}"></script>
+<script src="{% static 'core/j/waypoints.min.' %}"></script>
+<script src="{% static 'core/j/mail-script.' %}"></script>
+<script src="{% static 'core/j/contact.' %}"></script>
+<script src="{% static 'core/j/jquery.form.' %}"></script>
+<script src="{% static 'core/j/jquery.validate.min.' %}"></script>
+<script src="{% static 'core/j/mail-script.' %}"></script>
+<script src="{% static 'core/j/theme.' %}"></script>
+</body>
+</html>
